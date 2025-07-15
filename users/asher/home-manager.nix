@@ -22,5 +22,12 @@ in {
   programs.starship = {
     enable = true;
   };
+
+  programs.git = {
+    enable = true;
+    userName = "Asher";
+    userEmail = "asher@lxd.xyz";
+  };
+
   home.stateVersion = "25.11";
 }
