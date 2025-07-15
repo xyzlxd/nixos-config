@@ -5,11 +5,24 @@
     # i.e. nixos-24.11
     # Use `nix flake update` to update the flake to the latest revision of the chosen release channel.
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = inputs@{ self, nixpkgs, ... }: {
-    # NOTE: 'nixos' is the default hostname
-    nixosConfigurations.vm-intel = nixpkgs.lib.nixosSystem {
-      modules = [ ./machines/vm-intel.nix ];
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: let
+    overlays = [
+
+    ];
+
+    mkSystem = import ./lib/mksystem.nix {
+      inherit overlays nixpkgs inputs;
+    };     
+  in {
+    nixosConfigurations.vm-intel = mkSystem "vm-intel" rec {
+      system = "x86_64-linux";
+      user   = "asher";
     };
   };
 }
