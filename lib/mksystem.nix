@@ -25,6 +25,7 @@ let
   # NixOS vs nix-darwin functionst
   systemFunc = if darwin then inputs.darwin.lib.darwinSystem else nixpkgs.lib.nixosSystem;
   home-manager = if darwin then inputs.home-manager.darwinModules else inputs.home-manager.nixosModules;
+  disko = inputs.disko.nixosModules.disko;
 in systemFunc rec {
   inherit system;
 
@@ -51,6 +52,7 @@ in systemFunc rec {
         inputs = inputs;
       };
     }
+    disko
 
     # We expose some extra arguments so that our modules can parameterize
     # better based on these values.

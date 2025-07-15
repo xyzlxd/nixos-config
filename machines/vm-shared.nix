@@ -7,7 +7,7 @@
 {
   imports =
     [
-        
+     ../disko/disk-config.nix        
     ];
 
   # Use the systemd-boot EFI boot loader.
