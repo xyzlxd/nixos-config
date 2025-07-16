@@ -12,6 +12,7 @@ in {
   imports = [
     ./nixvim
     ./git
+    ./zellij
   ];
   
   programs.zsh = {
