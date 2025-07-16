@@ -5,6 +5,12 @@
       nix
       c
       java
+      vim
+      regex
+      lua
+      bash
+      markdown
+      markdown-inline
     ];
 
     settings = {
