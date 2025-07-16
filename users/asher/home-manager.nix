@@ -10,7 +10,7 @@ let
 in {
 
   imports = [
-    ./nixvim.nix
+    ./nixvim
   ];
   
   programs.zsh = {
