@@ -3,9 +3,10 @@
     enable = true;
     
     imports = [
-      ./global.nix
+      ./global
       ./plugins
       ./themes
+      ./options
     ];
   };
 }
