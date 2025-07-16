@@ -4,6 +4,8 @@
     
     imports = [
       ./global.nix
+      ./plugins
+      ./themes
     ];
   };
 }
