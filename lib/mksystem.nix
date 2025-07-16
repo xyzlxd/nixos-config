@@ -26,6 +26,7 @@ let
   systemFunc = if darwin then inputs.darwin.lib.darwinSystem else nixpkgs.lib.nixosSystem;
   home-manager = if darwin then inputs.home-manager.darwinModules else inputs.home-manager.nixosModules;
   disko = inputs.disko.nixosModules.disko;
+  nixvim = inputs.nixvim.homeManagerModules.nixvim;
 in systemFunc rec {
   inherit system;
 
@@ -51,6 +52,9 @@ in systemFunc rec {
         isWSL = isWSL;
         inputs = inputs;
       };
+      home-manager.sharedModules = [
+        nixvim
+      ];
     }
     disko
 

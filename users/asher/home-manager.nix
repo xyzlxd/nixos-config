@@ -8,6 +8,10 @@ let
   isLinux = pkgs.stdenv.isLinux;
 
 in {
+
+  imports = [
+    ./nixvim.nix
+  ];
   
   programs.zsh = {
     enable = true;
