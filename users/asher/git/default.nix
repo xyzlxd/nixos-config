@@ -25,6 +25,9 @@
         pruneTags = true;
         all = true;
       };
+      core = {
+        editor = "vi";
+      };
 
     };
   };
