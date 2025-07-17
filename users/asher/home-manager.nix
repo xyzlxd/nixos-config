@@ -14,6 +14,7 @@ in {
     ./git
     ./zellij
     ./zsh
+    ./lazygit
   ];
   
  
