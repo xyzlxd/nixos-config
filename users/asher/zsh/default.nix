@@ -3,6 +3,7 @@
       enable = true;
       shellAliases = {
         zj = "zellij";
+        lg = "lazygit";
       };
       syntaxHighlighting = {
         enable = true;
