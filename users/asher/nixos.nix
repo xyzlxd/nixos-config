@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 
 {
+  programs.zsh.enable = true;
 
   users.users.asher = {
     isNormalUser = true;
