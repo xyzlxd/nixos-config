@@ -16,8 +16,13 @@ in {
     ./zsh
     ./lazygit
   ];
-  
- 
+
+  home.packages = [
+    pkgs.gcc15
+    pkgs.gnumake
+    pkgs.gdb
+  ];
+
   programs.starship = {
     enable = true;
   };
