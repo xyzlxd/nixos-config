@@ -8,7 +8,7 @@
     home = "/home/asher";
     extraGroups = [ "docker" "lxd" "wheel" ];
     shell = pkgs.zsh;
-    hashedPassword = "$y$j9T$q/XzGEVfRsT8CnDA2FGCK/$a6ba6TCNR7SfuIsqahpPo/uz8NTf1SybWSu8KEqAmR0";
+    hashedPassword = "$y$j9T$AllMcLb69Mw0KWAXPJ6qw/$hwdemTr.m..TtKtEEF5j/zhqZvEP6cdKHUN6KoHO555";
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIsWWKlg9qxz5XvroCKBGEm6t6MuzsWIcG9wXwI9kKxG asher"
     ];
