@@ -35,6 +35,11 @@
       system = "x86_64-linux";
       user   = "asher";
     };
+    nixosConfigurations.vm-aarch64 = mkSystem "vm-aarch64" rec {
+      system = "aarch64-linux";
+      user   = "asher";
+    };
+ 
   };
 }
 
