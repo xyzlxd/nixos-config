@@ -15,6 +15,7 @@ in {
     ./zellij
     ./zsh
     ./lazygit
+    ./bat
   ];
 
   home.packages = [
