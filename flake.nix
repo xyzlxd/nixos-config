@@ -35,6 +35,11 @@
       system = "x86_64-linux";
       user   = "asher";
     };
+    nixosConfigurations.intel-kde = mkSystem "intel-kde" rec {
+      system = "x86_64-linux";
+      user   = "asher";
+    };
+
   };
 }
 
