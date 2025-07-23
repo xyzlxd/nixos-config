@@ -6,5 +6,6 @@
     ./noice.nix
     ./notify.nix
     ./nui.nix
+    ./sleuth
   ];
 }
