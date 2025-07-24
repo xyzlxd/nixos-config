@@ -7,5 +7,6 @@
     ./lazygit
     ./bat
     ./zoxide
+    ./yazi
   ];
 }
