@@ -10,12 +10,7 @@ let
 in {
 
   imports = [
-    ./nixvim
-    ./git
-    ./zellij
-    ./zsh
-    ./lazygit
-    ./bat
+    ./programs
   ];
 
   home.packages = [
