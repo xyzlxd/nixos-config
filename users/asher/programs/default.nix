@@ -6,5 +6,6 @@
     ./zsh
     ./lazygit
     ./bat
+    ./zoxide
   ];
 }
