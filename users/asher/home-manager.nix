@@ -10,12 +10,7 @@ let
 in {
 
   imports = [
-    ./nixvim
-    ./git
-    ./zellij
-    ./zsh
-    ./lazygit
-    ./bat
+    ./programs
   ];
 
   home.packages = [
@@ -29,4 +24,8 @@ in {
   };
 
   home.stateVersion = "25.11";
+
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 }
