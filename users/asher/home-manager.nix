@@ -17,6 +17,7 @@ in {
     pkgs.gcc15
     pkgs.gnumake
     pkgs.gdb
+    pkgs.lua
   ];
 
   programs.starship = {
